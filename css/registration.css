@@ -1,0 +1,38 @@
+body {
+    padding: 50px;
+    background: rgb(138, 197, 20);
+}
+
+.container {
+    background: green;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 80px;
+    padding: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 35px 0px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.Btn {
+    background: yellow;
+    color: green;
+    font-weight: 700;
+    left: 200px;
+}
+
+.btnR {
+    color: green;
+    font-weight: 800px;
+}
+
+.btnR:hover {
+    transform: translateY(-3px);
+}
+
+body p {
+    color: yellow;
+}

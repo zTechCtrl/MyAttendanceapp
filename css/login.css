@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, .2), rgb(0, 0, 0, .4)), url(../SEKU.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform {
+    width: min(425px, 95%);
+    height: 550px;
+    border: solid 2px yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(37, 104, 37);
+    border-radius: 15px;
+}
+
+.loginform:hover {
+    box-shadow: 0px 0px 50px 40px rgb(187, 184, 15), 0px 0px 0px 0px rgb(187, 184, 15);
+    animation: blink 1s infinite;
+}
+
+.inputgroup {
+    position: relative;
+    height: 40px;
+    width: 85%;
+    color: rgb(31, 248, 255);
+    margin-top: 0px;
+}
+
+.inputgroup input {
+    position: absolute;
+    width: 100%;
+    height: 43px;
+    background: white;
+    border-radius: 25px;
+    outline: none;
+    border: solid 2px red;
+    color: black;
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 8px;
+    margin-bottom: 50px;
+}
+
+.inputgroup label {
+    position: absolute;
+    transition: all 200ms;
+    color: rgb(150, 0, 0);
+    font-weight: 950;
+}
+
+.inputgroup input:hover+label,
+.inputgroup input:focus+label,
+.inputgroup input:valid+label {
+    transform: translateY(-7px);
+    color: yellow;
+}
+
+.inputgroup input:hover,
+.inputgroup input:focus,
+.inputgroup input:valid {
+    border: solid 2px yellow;
+}
+
+.eye {
+    position: absolute;
+    left: 87%;
+    bottom: -17px;
+    height: 30px;
+}
+
+.topmargin {
+    margin-top: 55px;
+}
+
+.rgt-zone {
+    position: absolute;
+    color: yellow;
+    margin-top: 200px;
+}
+
+.divcallforaction {
+    width: 85%;
+    height: 45px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btnlogin {
+    border: solid 1px green;
+    width: 150px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 40%;
+    color: green;
+    font-size: large;
+    font-weight: 500;
+}
+
+.btnlogin:hover {
+    transform: translateY(-3px);
+}
+
+.inactivecolor {
+    background-color: rgb(190, 22, 22);
+    color: white;
+}
+
+.activecolor {
+    background-color: rgb(250, 250, 17);
+    font-weight: 550;
+}
+
+.errormessage {
+    color: red;
+    margin-bottom: 0px;
+}
+
+.diverror {
+    background-color: transparent;
+    color: white;
+    height: 45px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+    letter-spacing: 1px;
+    position: absolute;
+    margin-top: 190px;
+}
+
+.applyerrordiv {
+    visibility: visible;
+    opacity: 1;
+    color: red;
+    animation: falldown 1s linear;
+}
+
+@keyframes falldown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    49% {
+        opacity: 1;
+        transform: translateY(0px);
+        letter-spacing: 1px;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+        letter-spacing: 3px;
+    }
+    55% {
+        opacity: 1;
+        transform: translateY(0px);
+        letter-spacing: 1px;
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+    80% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    85% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
