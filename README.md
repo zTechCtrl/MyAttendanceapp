@@ -16,6 +16,7 @@ FIRST Download
 
 6.Paste inside root directory/ where you install xammp local disk C: drive D: drive E: paste: (for xampp/htdocs, 
 
+
 7. Open PHPMyAdmin (http://localhost/phpmyadmin)
 
 8. Create a database with name s_attendance_db
@@ -30,3 +31,4 @@ Admin
 user: tonny
 pass: 123
 
+![Uploading Screenshot 2025-04-01 204814.png…]()
